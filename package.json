@@ -5,8 +5,7 @@
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged",
-    "install:husky": "husky install",
-    "homepage": "https://IsraelGalvez.github.io/https://github.com/IsraelGalvez/ClimaApp.git"
+    "install:husky": "husky install"
   },
   "devDependencies": {
     "husky": "7",

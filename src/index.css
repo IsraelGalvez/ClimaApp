@@ -1,3 +1,245 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    font-size: 62.5%;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.containerHeader{
+    max-width: 968px;
+    height: 73px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.Logos {
+    width: 228px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 354px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navsizes {
+    width: 102px;
+    height: 77px;
+    text-decoration: none;
+    
+}
+
+.navsizes:hover {
+    background-color: #e7e8ec;
+    border-radius: 5px;
+}
+.nameApp {
+    width: 163px;
+    font-size: 3.6rem;
+    font-weight: 550;
+    letter-spacing: 1.1px;
+}
+
+.imageLogo{
+    margin-left: 15px;
+}
+
+.figureNavImage {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMeImage {
+    margin-top: 6.5px;
+    margin-bottom: 6.5px;
+}
+
+.githubImage {
+    margin-top: 6.5px;
+    margin-bottom: 6.5px;
+}
+
+.textNav {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+
+
+
+/* Aqui empieza el main */
+.inputSection{
+    max-width: 968px;
+    height: 73px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cityInput {
+    width: 330px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #e7e8ec;
+    border: none;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.cityInput::placeholder {
+    color: black;
+    font-weight: 10;
+}
+.cityInput:hover {
+    background-color: #cfd1d9;
+}
+
+.cityButton {
+    width: 158px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: #111940;
+    color: white;
+    border: none;
+}
+
+.cityButton:hover {
+    width: 167px;
+    height: 61px;
+}
+
+.climaCiudades{
+    max-width: 968px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mainContainerWeather{
+    width: 187px;
+    height: 227px;
+    background-color: #111940;
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px rgb(0 0 0 / 23%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+    margin-bottom: 30px;
+}
+
+.nameTempContainer {
+    width: 151px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.cityName{
+    width: 151px;
+    height: 21.2px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1.6rem;
+}
+
+.AbreviaturaCity {
+    display: inline-block;
+    width: 19.91px;
+    height: 13.6px;
+    color: black;
+    font-size: .8rem;
+    border-radius: 20px;
+    background-color: #f4d257;
+    text-align: center;
+    position: relative;
+    top: -15px;
+    margin-left: 5px;
+}
+
+.cityTemp {
+    font-size: 5rem;
+    color: white;
+}
+
+.containerIconDescription {
+    width: 151px;
+    height: 119.2px;
+    margin: 0 auto;
+    position: relative;
+    top: -22px;
+}
+.imgIcon {
+    margin-left: 27px;
+}
+
+.descriptionWeather {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .Logos {
+        padding-left: 60px;
+    }
+    
+    .navbar {
+        padding-right: 40px;
+    }
+
+    .cityInput {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 682px) {
+    .header {
+        height: 180px;
+
+    }
+
+    .Logos {
+        margin: 0 auto;
+        justify-content: center;
+        width: 330px;
+    }
+    
+    .navbar {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .inputSection {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .cityInput {
+        margin: 0;
+
+    }
+}
